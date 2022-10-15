@@ -5,152 +5,155 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <div class="container_cabecalho">
-      <div class="container_cabecalho_imagem">
-        <img class="cabecalho_imagem" src="assets/images/logo.svg" alt="Logo">
-    </div>
-
-    <div class="container_cabecalho_titulo">
-        <span class="cabecalho_titulo">Controle Financeiro</span>
-    </div>
-    <div class="container_cabecalho_menu">
-        <input type="checkbox" id="chec">
-        <label class="nav_menu_rotulo" for="chec">
-          <img src="assets/images/menu.svg" alt="Menu">
-      </label>
-
-      <nav class="container_nav_menu">
-          <ul>
-            <li>
-              <input type="checkbox" id="chec">
-              <label class="nav_menu_rotulo" for="chec">
-                  <img class="nav_menu_imagem" src="assets/images/x.svg" alt="Fechar Janela">
-              </li>
-              <li><a class="link_cadastro" href="#">Cadastro de transações</a></li>
-              <li><a class="link_limpar" href="#">Limpar dados</a></li>
-          </ul>
-      </nav>
-  </div>
-</div>
-</header>    
-
-<section class="content">
-    <div class="transation">
-        <div class="h3_title">
-            <h3> Nova transação</h3>
-        </div>
-        <div class="tablet">
-            <div class="tablet_1">
-                <p>Tipo de transação</p>
-                <select class="state" name="estado">
-                    <option value="venda" selected>Compra</option>
-                    <option value="pagamento">Venda</option>
-                </select>
-                <br>
+    <header>
+        <div class="container_cabecalho">
+            <div class="container_cabecalho_imagem">
+                <img class="cabecalho_imagem" src="assets/images/logo.svg" alt="Logo">
             </div>
-            <div class="tablet_2">
-                <p>Nome da mercadoria</p>
-                <input class="state" type="text" name="nome" placeholder="Input" required>
-                <br>
+
+            <div class="container_cabecalho_titulo">
+                <span class="cabecalho_titulo">Controle Financeiro</span>
             </div>
-            <div class="tablet_3">
-                <p>Valor</p>
-                <input class="state" type="text" name="valor" placeholder="R$ 0,00" required>
-                <br>
+            <div class="container_cabecalho_menu">
+                <input type="checkbox" id="chec">
+                <label class="nav_menu_rotulo" for="chec">
+                    <img src="assets/images/menu.svg" alt="Menu">
+                </label>
+
+                <nav class="container_nav_menu">
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="chec">
+                            <label class="nav_menu_rotulo" for="chec">
+                                <img class="nav_menu_imagem" src="assets/images/x.svg" alt="Fechar Janela">
+                        </li>
+                        <li><a class="link_cadastro" href="#">Cadastro de transações</a></li>
+                        <li><a class="link_limpar" href="#">Limpar dados</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
-        <div class="tran">
-            <button class="add_tran">Adicionar transação</button>
-        </div>
-        <div class="line">
-        </div>
-    </div>
-    <div class="extract">
-        <div class="h3_title_mobile">
-            <h3> Extrato de transações</h3>
-        </div>
-        <table class="list">
-            <tr class="table">
-                <td class="td_1">
-                </td>
-                <td class="td_2">
-                    <p><b>Mercadoria</b></p>
-                </td>
-                <td class="td_3">
-                    <p><b>Valor</b></p>
-                </td>
-            </tr>
-            <tr>
-                <td class="td_1">
-                    <p>+</p>
-                </td>
-                <td class="td_2">
-                    <p>Lorem ipsum dolor sit amet <br> consectetur</p>
-                </td>
-                <td class="td_3">
-                    <p>R$ 12.999,99</p>
-                </td>
-            </tr>
-            <tr>
-                <td class="td_1">
-                    <p>-</p>
-                </td>
-                <td class="td_2">
-                    <p>Quis nostrud exercitation</p>
-                </td>
-                <td class="td_3">
-                    <p>R$ 99,99</p>
-                </td>
-            </tr>
-            <tr>
-                <td class="td_1">
-                    <p>+</p>
-                </td>
-                <td class="td_2">
-                    <p>Lorem ipsum </p>
-                </td>
-                <td class="td_3">
-                    <p>R$ 9,99</p>
-                </td>
-            </tr>
-            <tr>
-                <td class="td_1">
+    </header>
 
-                </td>
-                <td class="td_2">
+    <section class="content">
+        <div class="transaction">
+            <div class="h3_title">
+                <h3> Nova transação</h3>
+            </div>
+            <div class="tablet">
+                <div class="tablet_1">
+                    <p>Tipo de transação</p>
+                    <select class="state" name="estado">
+                        <option value="venda" selected>Compra</option>
+                        <option value="pagamento">Venda</option>
+                    </select>
+                    <br>
+                </div>
+                <div class="tablet_2">
+                    <p>Nome da mercadoria</p>
+                    <input class="state" type="text" name="nome" placeholder="Input" required>
+                    <br>
+                </div>
+                <div class="tablet_3">
+                    <p>Valor</p>
+                    <input class="state" type="text" name="valor" placeholder="R$ 0,00" required>
+                    <br>
+                </div>
+            </div>
+            <div class="tran">
+                <button class="add_tran">Adicionar transação</button>
+            </div>
+            <div class="line">
+            </div>
+        </div>
+        <div class="extract">
+            <div class="h3_title_mobile">
+                <h3> Extrato de transações</h3>
+            </div>
+            <table class="list">
+                <tbody>
+                    <tr class="table">
+                        <td class="td_1">
+                        </td>
+                        <td class="td_2">
+                            <p><b>Mercadoria</b></p>
+                        </td>
+                        <td class="td_3">
+                            <p><b>Valor</b></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td_1">
+                            <p>+</p>
+                        </td>
+                        <td class="td_2">
+                            <p>Lorem ipsum dolor sit amet <br> consectetur</p>
+                        </td>
+                        <td class="td_3">
+                            <p>R$ 12.999,99</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td_1">
+                            <p>-</p>
+                        </td>
+                        <td class="td_2">
+                            <p>Quis nostrud exercitation</p>
+                        </td>
+                        <td class="td_3">
+                            <p>R$ 99,99</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td_1">
+                            <p>+</p>
+                        </td>
+                        <td class="td_2">
+                            <p>Lorem ipsum </p>
+                        </td>
+                        <td class="td_3">
+                            <p>R$ 9,99</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td_1">
 
-                </td>
-                <td class="td_3">
-                </td>
-            </tr>
-            <tr class="tr_final">
-                <td class="td_1">
-                    <p></p>
-                </td>
-                <td class="td_2">
-                    <p><b>Total</b></p>
-                </td>
-                <td class="td_3">
-                    <p><b>R$ 12.909,99</b></p>
-                </td>
-            </tr>
-            <tr class="lucro">
-                <td class="td_1">
-                </td>
-                <td class="td_2">
-                </td>
-                <td class="td_3">
-                    [LUCRO]
-                </td>
-            </tr>
-        </table>
-    </div>
-</section>
+                        </td>
+                        <td class="td_2">
+
+                        </td>
+                        <td class="td_3">
+                        </td>
+                    </tr>
+                    <tr class="tr_final">
+                        <td class="td_1">
+                            <p></p>
+                        </td>
+                        <td class="td_2">
+                            <p><b>Total</b></p>
+                        </td>
+                        <td class="td_3">
+                            <p><b>R$ 12.909,99</b></p>
+                        </td>
+                    </tr>
+                    <tr class="lucro">
+                        <td class="td_1">
+                        </td>
+                        <td class="td_2">
+                        </td>
+                        <td class="td_3">
+                            [LUCRO]
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
 </body>
+
 </html>
