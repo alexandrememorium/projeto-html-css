@@ -13,11 +13,6 @@ const formatarMoedaTotal = new Intl.NumberFormat("pt-br", {
 
 desenhaTabela()
 
-//Impede o usuário de colar algo no campo valor.
-//const inputValor = document.querySelector("#inpt-valor");
-//inputValor.addEventListener("paste", function(x){
-//    x.preventDefault()
-//});
  
 function desenhaTabela() {
 
