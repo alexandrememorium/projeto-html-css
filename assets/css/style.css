@@ -137,13 +137,17 @@ table {
 }
 
 
-tr .conteudo-dinamico {
+tr {
     border-bottom: 1px solid #979797;
 }
 
 
 .conteudo-dinamico {
     border-bottom: 1px solid #979797;
+}
+
+.conteudo-dinamico_NT {
+    border-bottom: none;
 }
 
 

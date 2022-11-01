@@ -32,7 +32,7 @@ function desenhaTabela() {
     if (extrato.length == 0) {
         document.querySelector('table.list tbody').innerHTML +=
         `<tr class="conteudo-dinamico_NT">  
-            <td style="border:none; text-align:center; width:100" colspan=3>Nenhuma Transação cadastrada</td> 
+            <td style="border:none; text-align:center; width:100;" colspan=3>Nenhuma Transação cadastrada</td> 
         </tr>`;
       }
     
