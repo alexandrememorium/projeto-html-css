@@ -136,9 +136,16 @@ table {
     border-collapse: collapse
 }
 
-tr {
+
+tr .conteudo-dinamico {
     border-bottom: 1px solid #979797;
 }
+
+
+.conteudo-dinamico {
+    border-bottom: 1px solid #979797;
+}
+
 
 *,
 ::after,
@@ -322,7 +329,13 @@ tr {
         border-spacing: 0px;
     }
 
+   
     tr {
+        border-spacing: 0px;
+    }
+  
+
+    .conteudo-dinamico {
         border-spacing: 0px;
     }
 
@@ -330,7 +343,7 @@ tr {
         padding-top: 5px;
     }
     .transaction {
-        margin-top: 30px;
+        margin-top: 20px;
         margin-left: 0px;
         width: 400px;
         height: 344px;
@@ -351,7 +364,7 @@ tr {
     .extract {
         width: 680px;
         height: 241px;
-        margin-top: 42px; 
+        margin-top: 32px; 
         margin-left: 20px;     
     }
 
